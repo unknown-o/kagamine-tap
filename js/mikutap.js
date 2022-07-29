@@ -173,7 +173,7 @@ var MainManager = function () {
                     function (n) {
                         c = n;
                         for (var a = [], e = 0; e < s; e++) a[e] = [e + ".mp3"];
-                        (o = new WebAudioManager).load("data/main/main.json", a, t, i)
+                        (o = new WebAudioManager).load($("#choose").val(), a, t, i)
                     }(n)
             };
             this.play = function (n, a) {
