@@ -58,7 +58,7 @@ var MainManager = function () {
             var n = 1;
             2 <= window.devicePixelRatio && (n = 2);
             (I = PIXI.autoDetectRenderer(G, A, {
-                backgroundColor: 16756655,
+                backgroundColor: 0xffe211,
                 antialias: !1,
                 resolution: n
             })).autoDensity = !0, document.getElementById("view").appendChild(I.view), z = new PIXI.Container, g.init(), a(), $("#scene_top").fadeIn(300), r()
@@ -445,7 +445,7 @@ var MainManager = function () {
                     T.resize()
                 }
             }, this.init = function () {
-                w = !0, b = new PIXI.Container, z.addChild(b), f = new PIXI.Container, z.addChild(f), (T = new n(b)).setColor(8965324, 0)
+                w = !0, b = new PIXI.Container, z.addChild(b), f = new PIXI.Container, z.addChild(f), (T = new n(b)).setColor(0xffe211, 0)
             }, this.start = function () {
                 E || ($("#view").on("mousedown", i), $(window).on("mousemove", o), $(window).on("mouseup", h), $(window).on("keydown", a), $(window).on("keyup", e)), (E || window.TouchEvent) && ($("#view").on("touchstart", i), $(window).on("touchmove", o), $(window).on("touchend", h)), $("#view").css("cursor", "pointer")
             }, this.end = function () {
